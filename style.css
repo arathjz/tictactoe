@@ -1,0 +1,113 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	/* background-color: blue; */
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/* background-color: #70ABAF; */
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header {
+	background-color: #fff;
+	text-align: center;
+	border: 3px solid #000;
+	border-radius: 30%;
+	width: 250px;
+	cursor: pointer;
+}
+
+header:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+header, .game {
+	font-family: 'Chela One', cursive;
+}
+
+.game {
+	/* background-color: blue; */
+	margin-top: 50px;
+	width: 400px;
+	height: 400px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	font-size: 10rem;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid #000;
+	border-radius: 3px;
+	border-left: none;
+	border-top: none;
+	cursor: pointer;
+	transition: 1s;
+	opacity: 1;
+}
+
+#b3, #b6, #b9 {
+  border-right: none;
+}
+
+#b7, #b8, #b9 {
+	border-bottom: none;
+}
+
+.swal-footer {
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 10px;
+	border: 1px solid #000;
+	background-color: #fff;
+	color: #000;
+  font-size: 20px;
+}
+
+.swal-button:hover {
+  background-color: #000;
+	color: #fff;
+}
+
+.win {
+	color: #3AB7FF;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	.game {
+		width: 300px;
+		height: 300px;
+		margin-top: 60px;
+		font-size: 8rem;
+	}
+}
