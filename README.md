@@ -1,5 +1,5 @@
 # tictactoe
 
-Tic tac toe game using only Javascript.
+Tic tac toe with vanilla javascript.
 
-https://arathjz.github.io/tictactoe
+Demo [here](https://arathjz.github.io/tictactoe)
